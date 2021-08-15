@@ -14,7 +14,6 @@
 
 
     <?php 
-      //if (array_values($_GET))
       $city_raw = $_GET['city'];
 
       if ($city_raw !=0 )  {
