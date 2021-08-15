@@ -18,7 +18,7 @@
 
       if ($city_raw != '' )  {
         print_r ('<div style="background:#a3a3a3; width: 300px;">');
-        print_r ('City name:' )  ;
+        print_r ('City name:' );
     
         function city_name ($str) {
           $city = strip_tags(trim($str));
