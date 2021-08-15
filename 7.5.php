@@ -20,8 +20,6 @@
         print_r ('<div style="background:#a3a3a3;">');
         print_r ('City name:' )  ;
     
-        
-  
         function city_name ($str) {
           $city = strip_tags(trim($str));
           return ucfirst(strtolower($city));
