@@ -16,8 +16,8 @@
     <?php 
       $city_raw = $_GET['city'];
 
-      if ($city_raw !=0 )  {
-        print_r ('<div style="background:#a3a3a3;">');
+      if ($city_raw != '' )  {
+        print_r ('<div style="background:#a3a3a3; width: 300px;">');
         print_r ('City name:' )  ;
     
         function city_name ($str) {
