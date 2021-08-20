@@ -1,0 +1,29 @@
+main {
+    min-width:8em;
+    width:100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #457b9d;
+    font: 1.25em Arial, sans-serif;
+}
+.container {
+    padding: 0.9375em 2em 2em;
+    font-size:1.6em;
+}
+.container h1{
+    font-size: 1.25em;
+}
+@media (min-width: 28.8em) {
+.main { max-width: 27em; } }
+
+ @media (min-width: 38.4em) {
+.main { max-width: 36em; } }
+
+@media (min-width: 49.6em) {
+.main { max-width: 48em; } }
+
+@media (min-width: 60em) {
+.main { max-width: 56.8em; } }
+
+@media (min-width: 70.4em) {
+.main { max-width: 65.6em; } } 

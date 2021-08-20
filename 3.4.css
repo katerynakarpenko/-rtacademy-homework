@@ -1,0 +1,29 @@
+.box {
+  width: 640px;
+  height: auto;
+  background-color: #457b9d;
+  border: none;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .box {
+    background-color: #e9c46a;
+  }
+}
+
+@media (min-width: 992px) {
+  .box {
+    background-color: #f4a261;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    background-color: #e76f51;
+  }
+}
+
