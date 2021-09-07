@@ -2,28 +2,28 @@
 
 function processUploadedFile(
  string $name, int $max_size = 10485760 ) : bool
-  {
-    if( empty( $_FILES[$name] ) ) {
-      echo( 'Помилка. Необхідно завантажити файл.' );
-      return false;
-      }
-
-    if( $_FILES[$name]['error'] !== UPLOAD_ERR_OK ) {
-      echo( 'Сталася помилка під час завантаження файлу.' );
-      return false;
-      }
-
-    $valid_mimetypes = [ 'text/csv' ];
-    if( !in_array( $_FILES[$name]['type'], $valid_mimetypes ) ) {
-      echo( 'Помилка. Файл повинен мати формат CSV');
-      return false;
-      }
-    
-    if( $_FILES[$name]['size'] > $max_size ) {
-      echo( "Помилка. Файл повинен бути менше $max_size байт." );
-      return false;
-      }
+{
+  if( empty( $_FILES[$name] ) ) {
+    echo( 'Помилка. Необхідно завантажити файл.' );
+    return false;
   }
+
+  if( $_FILES[$name]['error'] !== UPLOAD_ERR_OK ) {
+    echo( 'Сталася помилка під час завантаження файлу.' );
+    return false;
+  }
+
+  $valid_mimetypes = [ 'text/csv' ];
+  if( !in_array( $_FILES[$name]['type'], $valid_mimetypes ) ) {
+    echo( 'Помилка. Файл повинен мати формат CSV');
+    return false;
+  }
+  
+  if( $_FILES[$name]['size'] > $max_size ) {
+    echo( "Помилка. Файл повинен бути менше $max_size байт." );
+    return false;
+  }
+}
 
   function fileGetUaCities ( string $path ) :array {
     if (file_exists( $path )) {

@@ -12,11 +12,7 @@
               $bigCities[] = $row;
           }
       }
-      //var_dump( $bigCities );
       fclose( $handle );
-
-
-      //file_put_contents( $newFilePath, $bigCities );
 
       
         if ($handle = fopen( $newFilePath, 'w' )) {
