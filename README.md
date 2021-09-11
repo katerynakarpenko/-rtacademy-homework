@@ -68,13 +68,6 @@
 #    ● підтримка різних пристроїв
 #    ● mobile first
 #    ● мікроформати
-# 1. https://rtacademy.net/design/01-1.png
-# 2. https://rtacademy.net/design/02-1.png
-# 3. https://rtacademy.net/design/03-1.png
-# 4. https://rtacademy.net/design/04-1.png
-# 5. https://rtacademy.net/design/05-1.png
-# 6. Або наприклад будь-який за посиланням (купляти не треба) 
-
 
 
 # 3.8
@@ -89,9 +82,3 @@
 #    ● підтримка різних пристроїв
 #    ● mobile first
 #    ● мікроформати
-# 1. https://rtacademy.net/design/01-2.png
-# 2. https://rtacademy.net/design/02-2.png
-# 3. https://rtacademy.net/design/03-2.png
-# 4. https://rtacademy.net/design/04-2.png
-# 5. https://rtacademy.net/design/05-2.png
-# 6. Або наприклад будь-який за посиланням (купляти не треба)
