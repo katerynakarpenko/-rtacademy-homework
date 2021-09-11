@@ -21,8 +21,8 @@
       file_put_contents($newFilePath, json_encode( $bigCities ));
       chmod( $newFilePath, 0644 );
 
-        header( 'Location: /rtacadamy_homework/data/cities.json' );
-        exit;
+      header( 'Location: /rtacadamy_homework/data/cities.json' );
+      exit;
     }
     else {
       echo ('File doesn\'t open');
