@@ -18,22 +18,11 @@
       }
       fclose( $handle );
 
-      if ($handle = fopen( $newFilePath, 'w' )) {
+      file_put_contents($newFilePath, json_encode( $bigCities ));
+      chmod( $newFilePath, 0644 );
 
-        $jsonVariable = json_encode( $bigCities );
-        
-        file_put_contents($newFilePath, $jsonVariable);
-
-        fclose($handle);
-        chmod( $newFilePath, 0644 );
-
-        header( 'Location: https://127.0.0.1/rtacadamy_homework/data/cities.json' );
+        header( 'Location: /rtacadamy_homework/data/cities.json' );
         exit;
-      }
-
-      else {
-        echo ('File doesn\'t open');
-      }
     }
     else {
       echo ('File doesn\'t open');
