@@ -1,0 +1,21 @@
+body {
+    font: normal 1rem/1.5rem Verdana,sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 16rem;
+    margin: 50vh auto 0 auto;
+}
+
+#country {
+    width: 100%;
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.5rem;
+}

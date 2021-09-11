@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=en> 
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/rtacadamy_homework/4.14.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lora&family=Montserrat:wght@400;500;700&display=swapdisplay=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>My Calculator</h1>
+    <form class="calculator">
+    <ul>
+      <li>
+        <label for="oper1">Operand 1</label>
+        <input class="inputs" type="text" id="oper1" required placeholder="Enter first operand">
+      </li>
+      <li>
+        <label for="select-action">Action</label>
+        <div class="select-wrapper">    
+          <select class="inputs drop-down" type="text" id="select-action" required >
+            <option class="default-option" value="default" disabled selected >Choose an action...</option>
+            <option value="sum">+</option>
+            <option value="min">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+            <option value="mod">%</option>
+            <option value="pow">**</option>
+          </select>
+        </div>
+        <span class="custom-arrow"></span>
+      </li>
+      <li>
+        <label for="oper2">Operand 2</label>
+        <input class="inputs" type="text" id="oper2" required placeholder="Enter second operand">
+      </li>
+      <li>
+        <label for="button"> </label>
+        <button class="inputs" id="button" type="button">=</button>
+      </li>
+      <li>
+        <label for="result">Result</label>
+        <input class="inputs" type="text" id="result" disabled readonly>
+      </li>
+      </ul>
+    </form>
+    <script src="/rtacadamy_homework/4.14.js"> </script>
+  </body>
+</html>

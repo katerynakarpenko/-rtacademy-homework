@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title" : "What is the ‘golden hour’ and how can you make the most of it?",
+    "alias" : "what-is-the-golden-hour-and-how-can-you-make-the-most-of-it",
+    "author" : {
+        "id" : 101,
+        "first_name" : "Tobias",
+        "last_name" : "Hagg"
+    },
+    "publish_date" : "2021-03-15 09:00:00",
+    "category": {
+        "id" : 10,
+        "title" : "Education",
+        "alias" : "education"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example1-cover-640x480.jpg",
+        "alt" : "Example 1"
+    }
+  },
+  {
+    "id": 2,
+    "title" : "How to create surreal double-exposure photos",
+    "alias" : "how-to-create-surreal-double-exposure-photos",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Piotr",
+        "last_name" : "Skoczylas"
+    },
+    "publish_date" : "2020-05-12 18:30:45",
+    "category": {
+        "id" : 20,
+        "title" : "Tips & Ideas",
+        "alias" : "tips-and-ideas"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Example 2"
+    }
+  },
+  {
+    "id": 3,
+    "title" : "How to create surreal double-exposure photos",
+    "alias" : "how-to-create-surreal-double-exposure-photos",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Piotr",
+        "last_name" : "Skoczylas"
+    },
+    "publish_date" : "2020-05-12 18:30:45",
+    "category": {
+        "id" : 20,
+        "title" : "Tips & Ideas",
+        "alias" : "tips-and-ideas"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Example 2"
+    }
+  }
+]

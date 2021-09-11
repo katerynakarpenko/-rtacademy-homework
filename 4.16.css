@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, form, ul, li, h1, label, input, button, option, select {
+    padding:0;
+    margin:0;
+    border: 0;
+    outline: none;
+}
+body {
+    width:100%;
+    font-size: 1rem;
+    color: #000;
+    font-family: 'Montserrat', serif;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 5rem auto;
+    color: #0088ff;
+}
+#date-result{
+    margin:0 6rem;
+    display:flex;
+    justify-content: space-between;
+}
+.datetime {
+    width: 16rem;
+    margin: 0 auto;
+}
+ul{
+    list-style-type:none;
+}
+li{
+    padding: 2rem 0;
+}
+label {
+    color:#808080;
+}
+.inputs {
+    display:block;
+    width: 100%;
+    border-radius:0.5rem;
+    border:0.0625rem solid #808080;
+    height: 2.2rem;
+    padding: 0 0.5rem;  
+    margin:1rem 0;
+}
+
+.inputs:focus {
+    border:0.2rem solid #0088ff;
+}
+input:focus::-webkit-input-placeholder {
+    opacity:0;
+}
+
+#button {
+    border:0.0625rem solid #0088ff;
+    font-size: 1rem;
+    background-color:#0088ff;
+    margin: auto 0 0 ;
+    color:#fff;
+    height: 3rem;
+    width:100%;
+    font-weight:bold;
+    cursor: pointer;
+}
+#button:hover {
+    background-color:#0044ff;
+}
