@@ -1,68 +1,68 @@
 [
   {
     "id": 1,
-    "title" : "What is the ‘golden hour’ and how can you make the most of it?",
-    "alias" : "what-is-the-golden-hour-and-how-can-you-make-the-most-of-it",
+    "title" : "BEST NEIGHBORHOODS IN AMSTERDAM: WHERE TO STAY DURING YOUR VISIT",
+    "alias" : "best-neighborhoods-amsterdam",
     "author" : {
         "id" : 101,
-        "first_name" : "Tobias",
-        "last_name" : "Hagg"
+        "first_name" : "Nick",
+        "last_name" : "Popovich"
     },
-    "publish_date" : "2021-03-15 09:00:00",
+    "publish_date" : "2021-10-09 11:11:00",
     "category": {
         "id" : 10,
-        "title" : "Education",
-        "alias" : "education"
+        "title" : "Holland",
+        "alias" : "Holland"
     },
     "cover" : {
         "width": 640,
         "height": 480,
         "url": "https://rtacademy.net/posts-example1-cover-640x480.jpg",
-        "alt" : "Example 1"
+        "alt" : "Holland"
     }
   },
   {
     "id": 2,
-    "title" : "How to create surreal double-exposure photos",
-    "alias" : "how-to-create-surreal-double-exposure-photos",
+    "title" : "Best Neighborhoods in Madrid: Where to Stay During Your Visit",
+    "alias" : "best-neighborhoods-madrid",
     "author" : {
         "id" : 102,
-        "first_name" : "Piotr",
-        "last_name" : "Skoczylas"
+        "first_name" : "Helga",
+        "last_name" : "Odds"
     },
-    "publish_date" : "2020-05-12 18:30:45",
+    "publish_date" : "2021-10-09 10:51:00",
     "category": {
         "id" : 20,
-        "title" : "Tips & Ideas",
-        "alias" : "tips-and-ideas"
+        "title" : "Spain",
+        "alias" : "Spain"
     },
     "cover" : {
         "width": 640,
         "height": 480,
         "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
-        "alt" : "Example 2"
+        "alt" : "Spain"
     }
   },
   {
     "id": 3,
-    "title" : "How to create surreal double-exposure photos",
-    "alias" : "how-to-create-surreal-double-exposure-photos",
+    "title" : "SLOVENIA WAS A STUNNING SURPRISE",
+    "alias" : "slovenia-trave",
     "author" : {
         "id" : 102,
-        "first_name" : "Piotr",
-        "last_name" : "Skoczylas"
+        "first_name" : "Jeoff",
+        "last_name" : "Castelucci"
     },
-    "publish_date" : "2020-05-12 18:30:45",
+    "publish_date" : "2021-10-09 17:50:00",
     "category": {
         "id" : 20,
-        "title" : "Tips & Ideas",
-        "alias" : "tips-and-ideas"
+        "title" : "Slovenia",
+        "alias" : "Slovenia"
     },
     "cover" : {
         "width": 640,
         "height": 480,
         "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
-        "alt" : "Example 2"
+        "alt" : "Slovenia"
     }
   }
 ]
