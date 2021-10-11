@@ -11,8 +11,8 @@
     "publish_date" : "2021-10-09 11:11:00",
     "category": {
         "id" : 10,
-        "title" : "Holland",
-        "alias" : "Holland"
+        "title" : "Europe",
+        "alias" : "Europe"
     },
     "cover" : {
         "width": 640,
@@ -33,8 +33,8 @@
     "publish_date" : "2021-10-09 10:51:00",
     "category": {
         "id" : 20,
-        "title" : "Spain",
-        "alias" : "Spain"
+        "title" : "Europe",
+        "alias" : "Europe"
     },
     "cover" : {
         "width": 640,
@@ -46,7 +46,7 @@
   {
     "id": 3,
     "title" : "SLOVENIA WAS A STUNNING SURPRISE",
-    "alias" : "slovenia-trave",
+    "alias" : "slovenia-travel",
     "author" : {
         "id" : 102,
         "first_name" : "Jeoff",
@@ -55,14 +55,212 @@
     "publish_date" : "2021-10-09 17:50:00",
     "category": {
         "id" : 20,
-        "title" : "Slovenia",
-        "alias" : "Slovenia"
+        "title" : "Europe",
+        "alias" : "Europe"
     },
     "cover" : {
         "width": 640,
         "height": 480,
         "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
         "alt" : "Slovenia"
+    }
+  },
+  {
+    "id": 4 ,
+    "title" : "13 Great Walking Tours in Berlin",
+    "alias" : "best-walking-tours-berlin",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Jeoff",
+        "last_name" : "Castelucci"
+    },
+    "publish_date" : "2021-10-09 17:52:00",
+    "category": {
+        "id" : 20,
+        "title" : "Europe",
+        "alias" : "Europe"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Germany"
+    }
+  },
+  {
+    "id": 5,
+    "title" : "Albania: A Case for Sustainable Tourism",
+    "alias" : "albania-sustainable-tourism",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Helga",
+        "last_name" : "Odds"
+    },
+    "publish_date" : "2021-10-09 10:58:00",
+    "category": {
+        "id" : 20,
+        "title" : "Asia",
+        "alias" : "Asia"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Albania"
+    }
+  },
+  {
+    "id": 6,
+    "title" : "TNN: Ghana – Why Moving Here is A Smart Plan",
+    "alias" : "tnn-ghana-africa-why-moving-here-is-a-smart-plan",
+    "author" : {
+        "id" : 101,
+        "first_name" : "Nick",
+        "last_name" : "Popovich"
+    },
+    "publish_date" : "2021-10-09 11:30:00",
+    "category": {
+        "id" : 10,
+        "title" : "Africa",
+        "alias" : "Africa"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example1-cover-640x480.jpg",
+        "alt" : "Africa"
+    }
+  },
+  {
+    "id": 7,
+    "title" : "NM+ Weekly Update 8/28/21: Croatia Edition",
+    "alias" : "weekly-update-8-28-21",
+    "author" : {
+        "id" : 101,
+        "first_name" : "Nick",
+        "last_name" : "Popovich"
+    },
+    "publish_date" : "2021-10-09 11:30:00",
+    "category": {
+        "id" : 10,
+        "title" : "Europe",
+        "alias" : "Europe"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example1-cover-640x480.jpg",
+        "alt" : "Croatia"
+    }
+  },
+  {
+    "id": 8 ,
+    "title" : "The Best Neighborhoods in Prague: Where to Stay During Your Visit",
+    "alias" : "best-neighborhoods-prague",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Jeoff",
+        "last_name" : "Castelucci"
+    },
+    "publish_date" : "2021-10-09 17:52:00",
+    "category": {
+        "id" : 20,
+        "title" : "Europe",
+        "alias" : "Europe"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Prague"
+    }
+  },
+  {
+    "id": 9,
+    "title" : "Albania: An Unexpected Journey",
+    "alias" : "visiting-albania",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Jeoff",
+        "last_name" : "Castelucci"
+    },
+    "publish_date" : "2021-10-09 17:50:00",
+    "category": {
+        "id" : 20,
+        "title" : "Asia",
+        "alias" : "Asia"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Albania"
+    }
+  },
+  {
+    "id": 10,
+    "title" : "Safety Wing: A Review of an Upstart Travel Insurance Company",
+    "alias" : "safety-wing-review",
+    "author" : {
+        "id" : 101,
+        "first_name" : "Nick",
+        "last_name" : "Popovich"
+    },
+    "publish_date" : "2021-10-09 11:11:00",
+    "category": {
+        "id" : 10,
+        "title" : "Europe",
+        "alias" : "Europe"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example1-cover-640x480.jpg",
+        "alt" : "Holland"
+    }
+  },
+  {
+    "id": 11,
+    "title" : "How to Explore the Cyclades Islands in Greece",
+    "alias" : "the-greek-islands",
+    "author" : {
+        "id" : 102,
+        "first_name" : "Helga",
+        "last_name" : "Odds"
+    },
+    "publish_date" : "2021-10-09 10:58:00",
+    "category": {
+        "id" : 20,
+        "title" : "Europe",
+        "alias" : "Europe"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example2-cover-640x480.jpg",
+        "alt" : "Greece"
+    }
+  },
+  {
+    "id": 12,
+    "title" : "Greece: Ten Years Later",
+    "alias" : "greece-ten-years-later",
+    "author" : {
+        "id" : 101,
+        "first_name" : "Nick",
+        "last_name" : "Popovich"
+    },
+    "publish_date" : "2021-10-09 11:30:00",
+    "category": {
+        "id" : 10,
+        "title" : "Europe",
+        "alias" : "Europe"
+    },
+    "cover" : {
+        "width": 640,
+        "height": 480,
+        "url": "https://rtacademy.net/posts-example1-cover-640x480.jpg",
+        "alt" : "Greece 10 years"
     }
   }
 ]
