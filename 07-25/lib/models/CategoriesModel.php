@@ -1,51 +1,56 @@
 <?php
 
-	declare( strict_types=1 );
+declare( strict_types=1 );
 
-	namespace lib\models;
+namespace lib\models;
 
-	class CategoriesModel {
+class CategoriesModel
+{
     /**
      * @throws \Exception
      * @return \lib\entities\Category[]
      */
-    public function getList() : array {
-			try {
-				// підʼєднуємось до БД
-				$db = \lib\DbConnection::getConnection();
+    public function getList() : array
+    {
+        try
+        {
+            // підʼєднуємось до БД
+            $db = \lib\DbConnection::getConnection();
 
-				// виконуємо запит
-				$statement = $db->query(
-						'
-								SELECT
-										`id`,
-										`title`,
-										`alias`
-								FROM
-										posts_categories
-								ORDER BY
-										`title` ASC
-						',
-						\PDO::FETCH_ASSOC
-				);
+            // виконуємо запит
+            $statement = $db->query(
+                '
+                    SELECT
+                        `id`,
+                        `title`,
+                        `alias`
+                    FROM
+                        posts_categories
+                    ORDER BY
+                        `title` ASC
+                ',
+                \PDO::FETCH_ASSOC
+            );
 
-				$items = [];
+            $items = [];
 
-				foreach( $statement as $row ) {
-					// Category
-					$item = new \lib\entities\Category();
-					$item->setId( (int)$row['id'] );
-					$item->setTitle( $row['title'] );
-					$item->setAlias( $row['alias'] );
+            foreach( $statement as $row )
+            {
+                // Category
+                $item = new \lib\entities\Category();
+                $item->setId( (int)$row['id'] );
+                $item->setTitle( $row['title'] );
+                $item->setAlias( $row['alias'] );
 
-					$items[] = $item;
-				}
+                $items[] = $item;
+            }
 
-				return $items;
-      }
-			catch( \PDOException $e ) {
-				throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
-			}
+            return $items;
+        }
+        catch( \PDOException $e )
+        {
+            throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
+        }
     }
 
     /**
@@ -54,35 +59,38 @@
      * @throws \Exception
      * @return bool
      */
-    public function existsByAlias( string $alias ) : bool {
-			try {
-				// підʼєднуємось до БД
-				$db = \lib\DbConnection::getConnection();
+    public function existsByAlias( string $alias ) : bool
+    {
+        try
+        {
+            // підʼєднуємось до БД
+            $db = \lib\DbConnection::getConnection();
 
-				// готуємо підготований запит з параметром :alias
-				$statement = $db->prepare(
-						"
-								SELECT
-										count(id) AS c
-								FROM
-										posts_categories
-								WHERE
-										alias = :alias
-						"
-				);
+            // готуємо підготований запит з параметром :alias
+            $statement = $db->prepare(
+                "
+                    SELECT
+                        count(id) AS c
+                    FROM
+                        posts_categories
+                    WHERE
+                        alias = :alias
+                "
+            );
 
-				// виконання підготованого запита з параметром :alias
-				$statement->execute(
-						[
-								':alias' => $alias,
-						]
-				);
+            // виконання підготованого запита з параметром :alias
+            $statement->execute(
+                [
+                    ':alias' => $alias,
+                ]
+            );
 
-				return boolval( $statement->fetch( \PDO::FETCH_ASSOC )['c'] ?? 0 );
-      }
-			catch( \PDOException $e ) {
-					throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
-			}
+            return boolval( $statement->fetch( \PDO::FETCH_ASSOC )['c'] ?? 0 );
+        }
+        catch( \PDOException $e )
+        {
+            throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
+        }
     }
 
     /**
@@ -92,40 +100,42 @@
      * @throws \Exception
      * @return bool
      */
-    public function existsByAliasExceptID( string $alias, int $id ) : bool {
-			try {
-					// підʼєднуємось до БД
-					$db = \lib\DbConnection::getConnection();
+    public function existsByAliasExceptID( string $alias, int $id ) : bool
+    {
+        try
+        {
+            // підʼєднуємось до БД
+            $db = \lib\DbConnection::getConnection();
 
-					// готуємо підготований запит з параметрами :alias та :id
-					$statement = $db->prepare(
-							"
-									SELECT
-											count(id) AS c
-									FROM
-											posts_categories
-									WHERE
-											alias = :alias
-											AND
-											id <> :id                         
-							"
-					);
+            // готуємо підготований запит з параметрами :alias та :id
+            $statement = $db->prepare(
+                "
+                    SELECT
+                        count(id) AS c
+                    FROM
+                        posts_categories
+                    WHERE
+                        alias = :alias
+                        AND
+                        id <> :id                         
+                "
+            );
 
-					// виконання підготованого запита з параметрами :alias та :id
-					$statement->execute(
-							[
-									':alias' => $alias,
-									':id' => $id,
-							]
-					);
+            // виконання підготованого запита з параметрами :alias та :id
+            $statement->execute(
+                [
+                    ':alias' => $alias,
+                    ':id' => $id,
+                ]
+            );
 
-					return boolval( $statement->fetch( \PDO::FETCH_ASSOC )['c'] ?? 0 );
-			}
-			catch( \PDOException $e )
-			{
-					throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
-			}
-		}
+            return boolval( $statement->fetch( \PDO::FETCH_ASSOC )['c'] ?? 0 );
+        }
+        catch( \PDOException $e )
+        {
+            throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
+        }
+    }
 
     /**
      * @param string $title
@@ -136,42 +146,44 @@
      */
     public function add( string $title, string $alias ) : ?\lib\entities\Category
     {
-			try {
-				// підʼєднуємось до БД
-				$db = \lib\DbConnection::getConnection();
+        try
+        {
+            // підʼєднуємось до БД
+            $db = \lib\DbConnection::getConnection();
 
-				// готуємо підготований запит з параметрами :title та :alias та поверненням ID доданого запису
-				$statement = $db->prepare(
-						"
-							INSERT INTO 
-									posts_categories
-									(title, alias)
-							VALUES
-									(:title, :alias)
-							RETURNING
-									id
-					"
-				);
+            // готуємо підготований запит з параметрами :title та :alias та поверненням ID доданого запису
+            $statement = $db->prepare(
+                "
+                    INSERT INTO 
+                        posts_categories
+                        (title, alias)
+                    VALUES
+                        (:title, :alias)
+                    RETURNING
+                        id
+                "
+            );
 
-				// виконання підготованого запита з параметрами :title та :alias
-				$statement->execute(
-						[
-								':title' => $title,
-								':alias' => $alias,
-						]
-				);
+            // виконання підготованого запита з параметрами :title та :alias
+            $statement->execute(
+                [
+                    ':title' => $title,
+                    ':alias' => $alias,
+                ]
+            );
 
-				$id = (int)( $statement->fetch( \PDO::FETCH_ASSOC )['id'] ?? 0 );
+            $id = (int)( $statement->fetch( \PDO::FETCH_ASSOC )['id'] ?? 0 );
 
-				// Category
-				$item = new \lib\entities\Category();
-				$item->setId( $id );
+            // Category
+            $item = new \lib\entities\Category();
+            $item->setId( $id );
 
-				return $item;
-			}
-			catch( \PDOException $e ) {
-					throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
-			}
+            return $item;
+        }
+        catch( \PDOException $e )
+        {
+            throw new \Exception( 'Помилка БД: ' .$e->getMessage() );
+        }
     }
 
     /**
@@ -182,8 +194,10 @@
      * @throws \Exception
      * @return bool
      */
-    public function edit( int $id, string $title, string $alias ) : bool {
-        try {
+    public function edit( int $id, string $title, string $alias ) : bool
+    {
+        try
+        {
             // підʼєднуємось до БД
             $db = \lib\DbConnection::getConnection();
 
